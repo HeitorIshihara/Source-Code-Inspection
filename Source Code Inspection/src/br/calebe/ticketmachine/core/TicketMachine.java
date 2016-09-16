@@ -25,9 +25,9 @@ public class TicketMachine {
             if(papelMoeda[1] = quantia){ 
                 achou = true; 
             } 
-        }
-        if (!achou) {
-            throw new PapelMoedaInvalidaException();
+            if (!achou) {
+                throw new PapelMoedaInvalidaException();
+            }
         }
         this.saldo += quantia;
     }
