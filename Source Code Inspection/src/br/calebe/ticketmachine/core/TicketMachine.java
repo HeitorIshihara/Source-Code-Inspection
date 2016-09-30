@@ -22,7 +22,7 @@ public class TicketMachine {
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
         boolean achou = false;
         while(!achou){
-            if(quantia == 2 || quantia == 5 || quantia == 10 || quantia == 20 || quantia == 50 || quantia == 100 ||){ 
+            if(quantia == 2 || quantia == 5 || quantia == 10 || quantia == 20 || quantia == 50 || quantia == 100){ 
                 achou = true; 
             } 
             if (!achou) {
