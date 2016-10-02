@@ -27,9 +27,6 @@ public class TrocoTest {
         
         PapelMoeda pm2 = new PapelMoeda(5, 1);
         pmList[0] = pm2;
-        
-        
-        
     }
     
     
