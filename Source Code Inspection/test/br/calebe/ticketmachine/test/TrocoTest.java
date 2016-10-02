@@ -19,14 +19,20 @@ public class TrocoTest {
     
     @Test
     public void trocoTest(){
-        Troco t = new Troco(15);
+        Troco t = new Troco(7);
         PapelMoeda[] pmList = new PapelMoeda[6];
         
-        PapelMoeda pm1 = new PapelMoeda(10, 1);
+        PapelMoeda pm1 = new PapelMoeda(5, 1);
         pmList[1] = pm1;
         
-        PapelMoeda pm2 = new PapelMoeda(5, 1);
+        PapelMoeda pm2 = new PapelMoeda(2, 1);
         pmList[0] = pm2;
+        
+        assertEquals(pmList[0].getValor(), 2);
+        assertEquals(pmList[0].getQuantidade(), 1);
+        
+        assertEquals(pmList[1].getValor(), 5);
+        assertEquals(pmList[1].getQuantidade(), 1);
     }
     
     
