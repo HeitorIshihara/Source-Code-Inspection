@@ -26,6 +26,7 @@ public class TicketMachineTest {
         assertEquals(tm2.getSaldo(), 0);
         assertEquals(tm2.getValor(), 50);
         
+        
     }
     
     @Test
