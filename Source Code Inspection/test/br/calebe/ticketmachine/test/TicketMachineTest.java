@@ -6,6 +6,8 @@ package br.calebe.ticketmachine.test;
  * and open the template in the editor.
  */
 
+import br.calebe.ticketmachine.core.TicketMachine;
+import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -15,8 +17,15 @@ import static org.junit.Assert.*;
  */
 public class TicketMachineTest {
     
+    TicketMachine tm = new TicketMachine();
+    
     @Test
-    public void testarInserir(){
-        
+    public void testarInserir() throws PapelMoedaInvalidaException{
+        assertEquals(tm.inserir(2), tm.getSaldo());
+        assertEquals(tm.inserir(5), tm.getSaldo());
+        assertEquals(tm.inserir(10), tm.getSaldo());
+        assertEquals(tm.inserir(20), tm.getSaldo());
+        assertEquals(tm.inserir(50), tm.getSaldo());
+        assertEquals(tm.inserir(100), tm.getSaldo());
     }
 }
