@@ -53,4 +53,21 @@ public class TicketMachine {
         result += "*****************\n";
         return result;
     }
+
+    public int getValor() {
+        return valor;
+    }
+
+    public void setValor(int valor) {
+        this.valor = valor;
+    }
+
+    public int[] getPapelMoeda() {
+        return papelMoeda;
+    }
+
+    public void setPapelMoeda(int[] papelMoeda) {
+        this.papelMoeda = papelMoeda;
+    }
+    
 }

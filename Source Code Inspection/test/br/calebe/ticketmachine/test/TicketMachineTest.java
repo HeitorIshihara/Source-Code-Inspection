@@ -20,6 +20,15 @@ public class TicketMachineTest {
     TicketMachine tm = new TicketMachine();
     
     @Test
+    public void testarConstrutor(){
+        TicketMachine tm2 = new TicketMachine(50);
+        
+        assertEquals(tm2.getSaldo(), 0);
+        assertEquals(tm2.getValor(), 50);
+        
+    }
+    
+    @Test
     public void testarInserir() throws PapelMoedaInvalidaException{
         assertEquals(tm.inserir(2), tm.getSaldo());
         assertEquals(tm.inserir(5), tm.getSaldo());
